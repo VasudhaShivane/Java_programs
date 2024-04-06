@@ -1,0 +1,25 @@
+import javax.swing.*;
+import java.awt.*;
+import java.awt.event.MouseEvent;
+import java.awt.event.MouseListener;
+public class Circle extends JApplet{
+
+
+public void inti()
+{
+    getContentPane().setBackground(Color.white);
+}
+
+public void paint(Graphics g)
+{
+    super.paint(g);
+
+    g.setColor(Color.black);
+    g.drawOval(20, 20, 140, 140);
+    g.setColor(Color.pink);
+    g.fillOval(20,20,140,140);
+    g.setColor(Color.BLACK);
+    g.setFont(new Font("SansSerif",Font.BOLD, 25));
+    g.drawString("Java", 60, 95);
+}
+}
